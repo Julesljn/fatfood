@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --green: #08AA6E;
+    --yellow: #FFE285;
+    --orange: #F6A230;
+    --red: #D53349;
+    --burgundy: #53180F;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-top: solid 4px;
+    border-image: linear-gradient(to right,
+    var(--burgundy) 20%,
+    var(--red) 20% 40%,
+    var(--orange) 40% 60%,
+    var(--yellow) 60% 80%,
+    var(--green) 80%) 1;
+}
+
+.header__nav {
+    width: 100vw;
+    height: 54px;
+    background-color: var(--red);
+}
+
+.nav__list {
+    width: 100vw;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    
+}
+.nav__list--items {
+    a {
+        color: white;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    width: 1200px;
+    margin: 80px 0 0 0;
+    gap: 24px;
+    align-items: center;
+}
+
+.hero__textContainer {
+    width: 40%;
+    gap: 30px;
+}
+.textContainer__title {
+    font-size: 62px;
+    color: var(--burgundy);
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 120%;
+}
+.textContainer__text {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: 32px 0 24px 0;
+}
+.textContainer__btn {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    border-radius: 360px;
+    background-color: var(--red);
+    display: inline-block;
+    padding: 16px 32px;
+    
+}
+
+.hero__imgContainer {
+    width: 690px;
+    background: var(--yellow);
+    background: linear-gradient(180deg, var(--yellow) 0%, var(--orange) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px var(--red) solid;
+    border-radius: 32px;
+}
+.imgContainer__img:hover {
+    transform: scale(1.2);
+}
+
+.recipe {
+    width: 1200px;
+    margin: 80px 0 0 0;
+    gap: 24px;
+}
